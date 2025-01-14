@@ -51,7 +51,7 @@ Amazon Aurora is an AWS relational database service optimized for high performan
 
 ## Conclusion
 
-This project provided a hands-on experience in connecting a web application to Amazon Aurora, showcasing the potential for creating scalable, high-performance applications using AWS services.
+This project provided me with a hands-on experience in connecting a web application to Amazon Aurora.
 
 ---
 
