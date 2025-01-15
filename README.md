@@ -12,7 +12,7 @@ Amazon Aurora is an AWS relational database service optimized for high performan
 - Integrating the application with Amazon Aurora for real-time data updates.
 - Observing how backend database changes reflect on the frontend.
 
-  ![Architectue](images/Aurora Architectural diagram.png "Architectural Diagram")
+  ![Architectue](https://github.com/ShaimaBB/AWS-projects/blob/be89b88d6f5bd587881b371f938351d5c3fbe28c/images/Aurora%20Architectural%20diagram.png)
 
 
 ---
