@@ -1,64 +1,97 @@
-# Connect a Web App to Amazon Aurora
+# Build a Three-Tier Web Application with AWS
 
-This project demonstrates how to connect a web application to Amazon Aurora, an AWS relational database service. It highlights the integration process, backend and frontend interactions, and database functionality.
-                      
+This project taught me how to set up a three-tier web application using AWS services. It showcases the integration of the **presentation tier**, **logic tier**, and **data tier** to create a fully functional web application.
 
 ---
 
-## Introduction
 
-Amazon Aurora is an AWS relational database service optimized for high performance and scalability. This project involves:
-- Setting up a web application using PHP and MariaDB.
-- Integrating the application with Amazon Aurora for real-time data updates.
-- Observing how backend database changes reflect on the frontend.
+## Overview
 
-  ![Architectue](https://github.com/ShaimaBB/AWS-projects/blob/be89b88d6f5bd587881b371f938351d5c3fbe28c/images/Aurora%20Architectural%20diagram.png)
+### Project Objectives
+- Implement a three-tier architecture:
+  1. **Presentation Tier**: Frontend display and distribution of the website.
+  2. **Logic Tier**: Backend logic using AWS Lambda and API Gateway.
+  3. **Data Tier**: Database setup using DynamoDB.
+- Connect the tiers for seamless data flow and user interaction.
 
+### Time Taken
+- Approximately 2.5 hours, including debugging and testing.
 
 ---
 
 ## Technologies Used
 
-- **AWS Services:** Amazon Aurora, EC2
-- **Backend:** PHP, MariaDB
-- **Web Server:** Apache
-- **Database Client:** MySQL CLI
-- **Development Tools:** SSH, Key Pair for EC2 connection
+- **Amazon S3**: For storing and serving frontend files.
+- **Amazon CloudFront**: For secure website distribution.
+- **AWS Lambda**: For backend logic and handling API requests.
+- **Amazon API Gateway**: For managing API endpoints.
+- **Amazon DynamoDB**: For storing and querying user data.
 
 ---
 
-## Features
+## Architecture
 
-- Integration of a web application with an Amazon Aurora database.
-- Ability to submit and view data via a web interface.
-- Real-time reflection of backend database changes on the frontend.
+![Three-Tier Architecture](https://github.com/ShaimaBB/AWS-projects/blob/a9512282dbf6a207c0351aab1e20c2824dd3f1d2/images/Screenshot%202025-01-14%20204905.png)
 
 ---
 
-## How It Works
+## Setup Steps
 
-- The web application interacts with the Amazon Aurora database through the configured EC2 instance.
-- A backend script processes form submissions and updates the Aurora database.
-- Changes in the database are reflected in the frontend table, demonstrating the real-time connection.
+### 1. Presentation Tier
+- **Tools Used**: Amazon S3, CloudFront.
+- **Steps**:
+  - Store the website files in an S3 bucket.
+  - Set up CloudFront for secure distribution of the website.
+  - Configure origin access control to restrict S3 access to CloudFront only.
+
+### 2. Logic Tier
+- **Tools Used**: AWS Lambda, API Gateway.
+- **Steps**:
+  - Create a Lambda function to handle user requests and interact with DynamoDB.
+  - Use API Gateway to define endpoints for the Lambda function.
+  - Ensure the Lambda function retrieves user data using the AWS SDK.
+
+### 3. Data Tier
+- **Tools Used**: Amazon DynamoDB.
+- **Steps**:
+  - Set up a DynamoDB table with `userId` as the partition key.
+  - Store sample user data for testing.
+  - Connect DynamoDB to the Lambda function.
+
+---
+
+## Error Handling
+
+### CORS Errors
+- **Issue**: API Gateway and Lambda by default block requests from CloudFront due to CORS restrictions.
+- **Solution**:
+  - Enable CORS in API Gateway for the `/user` resource.
+  - Add `Access-Control-Allow-Origin` headers in Lambda function responses.
+  - Reference the CloudFront domain in API Gateway’s settings.
 
 ---
 
 ## Testing
 
-- Install MySQL CLI to test database queries.
-- Run SQL commands to validate that the database contains the expected data.
-- Verify that changes made through the web interface are accurately reflected in the database.
+- **Steps**:
+  1. Visit the CloudFront distribution URL.
+  2. Enter a `userId` to test data retrieval.
+  3. Verify JSON responses in the browser.
+
+- **Expected Output**:
+  - User data is successfully retrieved and displayed on the web app.
 
 ---
 
-## Conclusion
+## Lessons Learned
 
-This project provided me with a hands-on experience in connecting a web application to Amazon Aurora.
+1. **CORS Challenges**:
+   - Configuring CORS is crucial for integrating the presentation and logic tiers.
+2. **End-to-End Testing**:
+   - Testing individual components ensures smooth integration.
+3. **AWS SDK**:
+   - Simplifies interaction with AWS services like DynamoDB.
 
 ---
 
-
-- [AWS Amazon Aurora Documentation](https://aws.amazon.com/rds/aurora/)
-
----
-
+**Author:** Shaima Bashar
