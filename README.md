@@ -1,7 +1,6 @@
 # Connect a Web App to Amazon Aurora
 
 This project demonstrates how to connect a web application to Amazon Aurora, an AWS relational database service. It highlights the integration process, backend and frontend interactions, and database functionality.
-
                       
 
 ---
@@ -12,6 +11,9 @@ Amazon Aurora is an AWS relational database service optimized for high performan
 - Setting up a web application using PHP and MariaDB.
 - Integrating the application with Amazon Aurora for real-time data updates.
 - Observing how backend database changes reflect on the frontend.
+
+  ![Architectue](images/Aurora Architectural diagram.png "Architectural Diagram")
+
 
 ---
 
