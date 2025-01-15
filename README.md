@@ -50,5 +50,4 @@ My documentation of this entire project is [here](docs/legendary-aws-compute-thr
 ---
 ## Resources
 - [NextWork Projects](https://community.nextwork.org/c/i-have-a-question?automatic_login=true)
-- 
 **Author:** Shaima Bashar
