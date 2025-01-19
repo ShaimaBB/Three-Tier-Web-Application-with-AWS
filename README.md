@@ -1,7 +1,7 @@
 # Build a Three-Tier Web Application with AWS
 
 This project taught me how to set up a three-tier web application using AWS services by integrating the **presentation tier**, **logic tier**, and **data tier** to create a fully functional web application.  
-My documentation of this entire project is [here](docs/legendary-aws-compute-threetier.pdf).
+My documentation of this entire project is [here](https://github.com/ShaimaBB/AWS-projects/blob/12a97505acb5fba18eaece7de760a4279bc8228c/AWS%20Three.pdf).
 
 
 ---
