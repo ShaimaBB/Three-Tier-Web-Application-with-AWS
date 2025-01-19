@@ -33,19 +33,15 @@ My documentation of this entire project is [here](https://github.com/ShaimaBB/AW
 
 ---
 
-- **Expected Output**:
+## Expected Output
   - User data is successfully retrieved and displayed on the web app.
 
 ---
 
 ## Lessons Learned
 
-1. **CORS Challenges**:
-   - Configuring CORS is crucial for integrating the presentation and logic tiers.
-2. **End-to-End Testing**:
-   - Testing individual components ensures smooth integration.
-3. **AWS SDK**:
-   - Simplifies interaction with AWS services like DynamoDB.
+**CORS Challenges**:
+   - Configuring CORS was troublesome which is crucial for integrating the presentation and logic tiers.
 
 ---
 ## Resources
