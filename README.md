@@ -43,9 +43,5 @@ My documentation of this entire project is [here](https://github.com/ShaimaBB/AW
 **CORS Challenges**:
    - Configuring CORS was troublesome which is crucial for integrating the presentation and logic tiers.
 
----
-## Resources
-- [NextWork Projects](https://community.nextwork.org/c/i-have-a-question?automatic_login=true)
-
 
 **Author:** Shaima Bashar
