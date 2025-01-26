@@ -45,6 +45,6 @@ My documentation of this entire project is [here](https://github.com/ShaimaBB/AW
 
 ---
 
-## ✍️ Author
+## 🧑‍💻 Creator
 
 **Shaima Bashar**
