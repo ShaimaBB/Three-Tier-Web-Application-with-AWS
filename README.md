@@ -7,7 +7,6 @@ My documentation of this entire project is [here](https://github.com/ShaimaBB/AW
 
 ## 🏗️ Overview
 
-### 🎯 Project Objectives
 - Implement a three-tier architecture:
   1. **Presentation Tier**: Frontend display and distribution of the website.
   2. **Logic Tier**: Backend logic using AWS Lambda and API Gateway.
