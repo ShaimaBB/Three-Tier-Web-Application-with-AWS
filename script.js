@@ -19,3 +19,4 @@ async function fetchUserData() {
         console.error('Failed to fetch user data:', error);
     }
 }
+
