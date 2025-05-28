@@ -27,7 +27,7 @@ My documentation of this entire project is [here](https://github.com/ShaimaBB/AW
 
 ##  Architecture
 
-![Three-Tier Architecture](https://github.com/ShaimaBB/AWS-projects/blob/a9512282dbf6a207c0351aab1e20c2824dd3f1d2/images/Screenshot%202025-01-14%20204905.png)
+![Three-Tier Architecture](https://github.com/ShaimaBB/Three-Tier-Web-Application-with-AWS/blob/62254c988edab23ee623e4f345add6225e42871c/images/Architecture%20Diagram.png)
 
 ---
 
