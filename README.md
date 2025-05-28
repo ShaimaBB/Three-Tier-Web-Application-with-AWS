@@ -44,11 +44,11 @@ My documentation of this entire project is [here](https://github.com/ShaimaBB/AW
 
 ---
 
-## 🧑‍💻 Creator 
+## 🧑‍💻 Creators 
 
 **Shaima Bashar**
 
-**[NextWork](https://learn.nextwork.org/)**
+**[NextWork](https://learn.nextwork.org/)** - Resourses
 
 
 
