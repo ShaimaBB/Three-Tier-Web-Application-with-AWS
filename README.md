@@ -37,13 +37,6 @@ My documentation of this entire project is [here](https://github.com/ShaimaBB/AW
 
 ---
 
-##  Lessons Learned
-
-###  CORS Challenges
-- Configuring CORS was troublesome, but it was crucial for integrating the presentation and logic tiers effectively.
-
----
-
 ##  Creators 
 
 **Shaima Bashar**
