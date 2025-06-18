@@ -41,7 +41,7 @@ My documentation of this entire project is [here](https://github.com/ShaimaBB/AW
 
 **Shaima Bashar**
 
-**[NextWork](https://learn.nextwork.org/)** - Resourses
+
 
 
 
